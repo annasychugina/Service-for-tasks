@@ -1,0 +1,71 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "<b>Authors:</b>",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "ava \"src/scripts/*.test.js\"",
+    "lint": "eslint src/scripts || true",
+    "stylelint": "stylelint src/styles/*.css || true",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
+    "build": "gulp build",
+    "info": "npm-scripts-info"
+  },
+  "scripts-info": {
+    "build": "Build project with Gulp",
+    "eslint": "Checkout codestyle",
+    "info": "Watch information about current scripts",
+    "test": "unit testing"
+  },
+  "pre-commit": {
+    "run": [
+      "precommit-msg",
+      "lint",
+      "stylelint"
+    ]
+  },
+  "pre-push": {
+    "run": [
+      "test",
+      "lint"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galynskyy/FirstProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/galynskyy/FirstProject/issues"
+  },
+  "homepage": "https://github.com/galynskyy/FirstProject#readme",
+  "dependencies": {
+    "autoprefixer": "^6.7.2",
+    "browser-sync": "^2.18.7",
+    "cssnano": "^3.10.0",
+    "del": "^2.2.2",
+    "cyclejs-calendar": "^0.1.2",
+    "gulp": "^3.9.1",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "cssnano": "^3.9.1",
+    "del": "^2.2.2",
+    "eslint": "^3.18.0",
+    "gulp": "^3.9.1",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jsdoc3": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "pre-commit": "^1.2.2",
+    "stylelint": "^7.9.0",
+    "stylelint-config-standard": "^16.0.0"
+  }
+}
