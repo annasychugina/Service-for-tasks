@@ -1,7 +1,9 @@
 # Сервис для планирования задач
 # Описание
 Данный сервис представляет собой некий таск-менеджер. Можно добавлять задачи и следить за сроками их выполнения, удалять ненужные задачи.
+
 Ссылка[development]: https://github.com/galynskyy/Goal/tree/develop
+###
 Ссылка[production]: https://goal.dev.galynsky.ru/
 ### Главная страница
 ![MainPage](https://github.com/sychuginaanna/Service-for-tasks/raw/master/README/mainPage.png)
